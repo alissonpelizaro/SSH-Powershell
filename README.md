@@ -1,5 +1,5 @@
 # SSH_Powershell
-Aplicação pronta para realizar comandos powershell em um servidor Windows remotamente a partir de um Servidor Linux.
+Aplicação em PHP pronta para realizar comandos powershell em um servidor Windows remotamente a partir de um Servidor Linux.
 
 ## Requisitos
 * Servidor Windows precisa ter o serviço SSH habilitado
