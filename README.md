@@ -1,7 +1,16 @@
 # SSH_Powershell
-Aplicação pronta para realizar comando powershel em um servidor Windows remotamente a partir de um Linux
+Aplicação pronta para realizar comandos powershell em um servidor Windows remotamente a partir de um Servidor Linux.
 
-## Executar em CLI (parametro "-d" habilita DEBUDE-MODE)
+## Requisitos
+* Servidor Windows precisa ter o serviço SSH habilitado
+* PHP >= 5.3.3
+
+## Dependencias
+* phpseclib/phpseclib >=  2.0.21
+
+
+## Executar em CLI
+(parâmetro "-d" habilita DEBUG-MODE)
 ```
 php service.php -d
 ```
@@ -37,9 +46,10 @@ $powershell->resetPassword('alisson', 'novaSenha123');
 $powershell->exec('powershell Set-ADUser -Identity alisson -PasswordNeverExpires $true');
 ```
 
-A aplicação já salva todos os comandos em LOG no arquivo `ssh.log`. Para setar um log adicional basta chamar o seguinte método estatico:
+## Utilização de LOG
+Por ser execitado em CLI e em alguns casos de forma não assistida, a melhor forma de monitoração é o LOG. A aplicação já salva todos os comandos em LOG no arquivo `ssh.log`. Para setar um log adicional basta chamar o seguinte método estático:
 
-`Log::create('Descricao do log', {true para log de erro}, {true para matar a aplicação após regitro});`
+`Log::create('Descrição do log', {true para log de erro}, {true para matar a aplicação após regitro});`
 
 Exemplos:
 ```php
