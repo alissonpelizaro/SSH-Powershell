@@ -47,7 +47,7 @@ $powershell->exec('powershell Set-ADUser -Identity alisson -PasswordNeverExpires
 ```
 
 ## Utilização de LOG
-Por ser execitado em CLI e em alguns casos de forma não assistida, a melhor forma de monitoração é o LOG. A aplicação já salva todos os comandos em LOG no arquivo `ssh.log`. Para setar um log adicional basta chamar o seguinte método estático:
+Por permitir ser executado em CLI e em alguns casos de forma não assistida, a melhor forma de monitoração é o LOG. A aplicação já salva todos os comandos em LOG no arquivo `ssh.log`. Para setar um log adicional basta chamar o seguinte método estático:
 
 `Log::create('Descrição do log', {true para log de erro}, {true para matar a aplicação após regitro});`
 
