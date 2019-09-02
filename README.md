@@ -30,7 +30,7 @@ $powershell = new PowerShell($ssh);
 
 ## Exemplos de comandos
 ```php
-//Exemplo para opter a lista de todos os usuários
+//Exemplo para obter a lista de todos os usuários
 print_r($powershell->getUsers());
 
 //Exemplo para procurar um usuário especifico
@@ -87,7 +87,7 @@ $user = $powershell->getUser('alisson');
 ```
 
 ### exec()
-Executa qualuqer comando comando powershell passado como parâmetro
+Executa qualquer comando powershell passado como parâmetro
 ```php
 $comando = $powershell->exec('powershell Get-ADuser joao.silva -properties *');
 ```
