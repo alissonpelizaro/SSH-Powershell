@@ -1,5 +1,10 @@
 <?php
-require __DIR__.'/core.php';
+
+/*
+* Arquivo de exemplo para execução em CLI
+*/
+
+require __DIR__.'/core.php'
 
 $host = "host_remoto";
 $user = "usuario";
