@@ -1,6 +1,13 @@
 #!/usr/bin/php
 <?php
 
+/*
+* Exemplo de utilização em integração com o  Asterisk
+* (reset de senha via telefone)
+*
+*Autor: Alisson Pelizaro (alissonpelizaro@hotmail.com)
+*/
+
 require __DIR__.'/ssh_reset/core.php';
 require __DIR__.'/phpagi.php';
 
