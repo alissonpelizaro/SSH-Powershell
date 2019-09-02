@@ -77,7 +77,7 @@ $users = $powershell->getUsers();
 ### searchUser()
 Procura usuários com base nos filtros passados
 ```php
-$users = $powershell->searchUser('HomeFone', '554130304545');
+$users = $powershell->searchUser('HomePhone', '554130304545');
 ```
 
 ### getUser()
