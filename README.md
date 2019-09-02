@@ -66,3 +66,46 @@ Log::create('Erro ao executar o comando', true, true);
 Log::create('Comando executado', false, true);
 ```
 
+## Comandos PowerShell
+
+### getUsers()
+Trás um array com todos os usuários do servidor.
+```php
+$users = $powershell->getUsers();
+```
+
+### searchUser()
+Procura usuários com base nos filtros passados
+```php
+$users = $powershell->searchUser('HomeFone', '554130304545');
+```
+
+### getUser()
+Pega dados de um usuário especifivo de acordo com seu CN
+```php
+$user = $powershell->getUser('alisson');
+```
+
+### exec()
+Executa qualuqer comando comando powershell passado como parâmetro
+```php
+$comando = $powershell->exec('powershell Get-ADuser joao.silva -properties *');
+```
+
+### resetPassword()
+Troca a senha de acesso de um usuário
+```php
+$powershell->resetPassword('alisson', 'nova$enha123');
+```
+
+### askNewPassword()
+Define pedido de nova senha no próximo logon (verdadeiro ou falso)
+```php
+$powershell->askNewPassword('alisson', true);
+```
+
+### setExpiredPass()
+Seta a configuração "Senha nunca expira"  de um usuário (verdadeiro ou falso)
+```php
+$powershell->setExpiredPass('alisson', true);
+```
