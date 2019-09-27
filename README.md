@@ -81,7 +81,7 @@ $users = $powershell->searchUser('HomePhone', '554130304545');
 ```
 
 ### getUser()
-Pega dados de um usuário especifivo de acordo com seu CN
+Pega dados de um usuário específico de acordo com seu CN
 ```php
 $user = $powershell->getUser('alisson');
 ```
