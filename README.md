@@ -10,7 +10,7 @@ Aplicação em PHP pronta para realizar comandos powershell em um servidor Windo
 composer require alissonpelizaro/ssh_powershell
 ```
 
-## Dependencias
+## Dependências
 * phpseclib/phpseclib >=  2.0.21
 
 ## Executar em CLI
