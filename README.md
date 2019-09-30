@@ -5,9 +5,13 @@ Aplicação em PHP pronta para realizar comandos powershell em um servidor Windo
 * Servidor Windows precisa ter o serviço SSH habilitado
 * PHP >= 5.3.3
 
+## Instalação
+```
+composer require alissonpelizaro/ssh_powershell
+```
+
 ## Dependencias
 * phpseclib/phpseclib >=  2.0.21
-
 
 ## Executar em CLI
 (parâmetro "-d" habilita DEBUG-MODE)
