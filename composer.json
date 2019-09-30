@@ -1,4 +1,25 @@
 {
+    "name": "alissonpelizaro/ssh_powershell",
+    "description": "Remote Powershell SSH access",
+    "license": [
+        "RPL-1.5",
+        "proprietary"
+    ],
+    "keywords": [
+        "SSH",
+        "Powershell",
+        "Windows",
+        "Linux",
+        "PHP",
+        "Remote"
+    ],
+    "authors": [
+        {
+            "name": "Alisson Pelizaro",
+            "email": "alissonpelizaro@hotmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "phpseclib/phpseclib":"~2.0"
     }
